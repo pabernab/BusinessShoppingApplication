@@ -1,4 +1,6 @@
-public class Item {
+package Team8.Cs151.SJSU.model;
+
+public class Item implements LineItem{
     private String name;
     private int ID;
     private double price;

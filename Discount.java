@@ -1,17 +1,21 @@
+package Team8.Cs151.SJSU.model;
+
+import Team8.Cs151.SJSU.model.Bundle;
+
 public class Discount implements LineItem {
     protected String name;
     protected int ID;
     protected double price;
 
     public Discount(Item i, double discount) {
-        name = i.getName() + " Discounted";
+        name = i.getName() + " (Discounted)";
         ID = i.getID() + 10000;
         price = i.getPrice() * (1 - discount);
 
     }
 
     public Discount(Bundle b, double discount) {
-        name = b.getName() + " Discounted";
+        name = b.getName() + " (Discounted)";
         ID = b.getID() + 10000;
         price = b.getPrice() * (1 - discount);
     }

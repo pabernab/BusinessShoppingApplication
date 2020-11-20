@@ -1,3 +1,5 @@
+package Team8.Cs151.SJSU.model;
+
 public class Customer {
     public String name;
     public int ID;
@@ -22,8 +24,8 @@ public class Customer {
         return balance;
     }
 
-    public void addOrder() {
-
+    public void addOrder(Order O) {
+    newOrder = O;
     }
 
 }
